@@ -1,0 +1,506 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  ExtCtrls, bmpPanel, Menus, StdCtrls, INIFiles, MMSystem;
+
+type
+  TForm1 = class(TForm)
+    MainMenu1: TMainMenu;
+    Plik1: TMenuItem;
+    NowaGra1: TMenuItem;
+    Pauza1: TMenuItem;
+    NajlepszeWyniki1: TMenuItem;
+    N1: TMenuItem;
+    Wyjcie1: TMenuItem;
+    Ustawienia1: TMenuItem;
+    OdtwarzajDwiki1: TMenuItem;
+    Pomoc1: TMenuItem;
+    Informacje1: TMenuItem;
+    OProgramie1: TMenuItem;
+    ListBox1: TListBox;
+    Panel1: TPanel;
+    Image1: TImage;
+    Panel2: TPanel;
+    Image2: TImage;
+    Panel3: TPanel;
+    Image3: TImage;
+    Panel4: TPanel;
+    Image4: TImage;
+    Panel5: TPanel;
+    Image5: TImage;
+    Panel6: TPanel;
+    Image6: TImage;
+    Panel7: TPanel;
+    Image7: TImage;
+    Panel8: TPanel;
+    Image8: TImage;
+    Panel9: TPanel;
+    Image9: TImage;
+    Panel10: TPanel;
+    Image10: TImage;
+    Panel11: TPanel;
+    Image11: TImage;
+    Panel12: TPanel;
+    Image12: TImage;
+    Panel13: TPanel;
+    Image13: TImage;
+    Panel14: TPanel;
+    Image14: TImage;
+    Panel15: TPanel;
+    Image15: TImage;
+    Panel16: TPanel;
+    Image16: TImage;
+    Panel17: TPanel;
+    Image17: TImage;
+    Panel18: TPanel;
+    Image18: TImage;
+    Panel19: TPanel;
+    Image19: TImage;
+    Panel20: TPanel;
+    Image20: TImage;
+    Panel21: TPanel;
+    Image21: TImage;
+    Panel22: TPanel;
+    Image22: TImage;
+    Panel23: TPanel;
+    Image23: TImage;
+    Panel24: TPanel;
+    Image24: TImage;
+    Panel25: TPanel;
+    Image25: TImage;
+    Panel26: TPanel;
+    Image26: TImage;
+    Panel27: TPanel;
+    Image27: TImage;
+    Panel28: TPanel;
+    Image28: TImage;
+    Panel29: TPanel;
+    Image29: TImage;
+    Panel30: TPanel;
+    Image30: TImage;
+    Panel31: TPanel;
+    Image31: TImage;
+    Panel32: TPanel;
+    Image32: TImage;
+    Panel33: TPanel;
+    Image33: TImage;
+    Panel34: TPanel;
+    Image34: TImage;
+    Panel35: TPanel;
+    Image35: TImage;
+    Panel36: TPanel;
+    Image36: TImage;
+    Panel37: TPanel;
+    Image37: TImage;
+    Panel38: TPanel;
+    Image38: TImage;
+    Panel39: TPanel;
+    Image39: TImage;
+    Panel40: TPanel;
+    Image40: TImage;
+    Panel41: TPanel;
+    Image41: TImage;
+    Panel42: TPanel;
+    Image42: TImage;
+    Panel43: TPanel;
+    Image43: TImage;
+    Panel44: TPanel;
+    Image44: TImage;
+    Panel45: TPanel;
+    Image45: TImage;
+    Panel46: TPanel;
+    Image46: TImage;
+    Panel47: TPanel;
+    Image47: TImage;
+    Panel48: TPanel;
+    Image48: TImage;
+    Panel49: TPanel;
+    Image49: TImage;
+    Panel50: TPanel;
+    Image50: TImage;
+    Panel51: TPanel;
+    Panel52: TPanel;
+    Image52: TImage;
+    Panel53: TPanel;
+    Image53: TImage;
+    Panel54: TPanel;
+    Image54: TImage;
+    Panel55: TPanel;
+    Image55: TImage;
+    Panel56: TPanel;
+    Image56: TImage;
+    Panel57: TPanel;
+    Image57: TImage;
+    Panel58: TPanel;
+    Image58: TImage;
+    Panel59: TPanel;
+    Image59: TImage;
+    Panel60: TPanel;
+    Image60: TImage;
+    Panel61: TPanel;
+    Image61: TImage;
+    Panel62: TPanel;
+    Image62: TImage;
+    Panel63: TPanel;
+    Image63: TImage;
+    Panel64: TPanel;
+    Image64: TImage;
+    Panel65: TPanel;
+    Image65: TImage;
+    Panel66: TPanel;
+    Image66: TImage;
+    Panel67: TPanel;
+    Image67: TImage;
+    Panel68: TPanel;
+    Image68: TImage;
+    Panel69: TPanel;
+    Image69: TImage;
+    Panel70: TPanel;
+    Image70: TImage;
+    Panel71: TPanel;
+    Image71: TImage;
+    Panel72: TPanel;
+    Image72: TImage;
+    Panel73: TPanel;
+    Image73: TImage;
+    Panel74: TPanel;
+    Image74: TImage;
+    Panel75: TPanel;
+    Image75: TImage;
+    Panel76: TPanel;
+    Image76: TImage;
+    Panel77: TPanel;
+    Image77: TImage;
+    Panel78: TPanel;
+    Image78: TImage;
+    Panel79: TPanel;
+    Image79: TImage;
+    Panel80: TPanel;
+    Image80: TImage;
+    Panel81: TPanel;
+    Image81: TImage;
+    Panel82: TPanel;
+    Image82: TImage;
+    Panel83: TPanel;
+    Image83: TImage;
+    Panel84: TPanel;
+    Image84: TImage;
+    Panel85: TPanel;
+    Image85: TImage;
+    Panel86: TPanel;
+    Image86: TImage;
+    Panel87: TPanel;
+    Image87: TImage;
+    Panel88: TPanel;
+    Image88: TImage;
+    Panel89: TPanel;
+    Image89: TImage;
+    Panel90: TPanel;
+    Image90: TImage;
+    Panel91: TPanel;
+    Image91: TImage;
+    Panel92: TPanel;
+    Image92: TImage;
+    Panel93: TPanel;
+    Image93: TImage;
+    Panel94: TPanel;
+    Image94: TImage;
+    Panel95: TPanel;
+    Image95: TImage;
+    Panel96: TPanel;
+    Image96: TImage;
+    Panel97: TPanel;
+    Image97: TImage;
+    Panel98: TPanel;
+    Image98: TImage;
+    Panel99: TPanel;
+    Image99: TImage;
+    Panel100: TPanel;
+    Image100: TImage;
+    ListBox2: TListBox;
+    Image101: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    Timer1: TTimer;
+    Image51: TImage;
+    Pozdrowienia1: TMenuItem;
+    procedure NowaGra1Click(Sender: TObject);
+    procedure Klikniecie(Sender: TObject);
+    procedure Wyjcie1Click(Sender: TObject);
+    procedure Timer1Timer(Sender: TObject);
+    procedure Pauza1Click(Sender: TObject);
+    procedure NajlepszeWyniki1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure FormCreate(Sender: TObject);
+    procedure OdtwarzajDwiki1Click(Sender: TObject);
+    procedure Informacje1Click(Sender: TObject);
+    procedure OProgramie1Click(Sender: TObject);
+    procedure Pozdrowienia1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+  tablica:array[1..100] of integer;
+  wynik1,wynik3:array[0..10] of string;
+  wynik2:array[0..10] of integer;
+  pauza:boolean;
+  widoczne:byte;
+  sound,punkty,sek,min,godz,licz:integer;
+
+const nazwa='Mistrz Pamiêci 1.0 - Freeware';
+const crTr1 = 1;
+
+implementation
+
+uses Unit2, Unit3, Unit4, Unit5;
+
+{$R *.DFM}
+
+procedure TForm1.NowaGra1Click(Sender: TObject);
+var liczba,los,i,j:integer;
+begin
+if sound=1 then begin
+PlaySound(PChar(ExtractFilePath(Paramstr(0))+'start'),0,snd_Async);end;
+ListBox1.Clear;
+ListBox2.Clear;
+punkty:=0;
+widoczne:=0;
+licz:=0;
+Label1.Caption:='0';
+Label2.Caption:='00:00:00';
+sek:=0;
+min:=0;
+godz:=0;
+Timer1.Enabled:=True;
+Form1.Caption:=nazwa;
+pauza:=false;
+for i:=1 to 100 do begin
+ListBox1.Items.Add(inttostr(i));
+TPanel(FindComponent('Panel'+inttostr(i))).Visible:=True;
+TImage(FindComponent('Image'+inttostr(i))).Enabled:=True;end;
+randomize;
+for i:=1 to 50 do begin
+ los:=Random(ListBox1.Items.Count-1);
+ liczba:=strtoint(listbox1.Items.Strings[los]);
+ ListBox1.Items.Delete(los);
+ tablica[liczba]:=i;
+  los:=Random(ListBox1.Items.Count-1);
+  liczba:=strtoint(listbox1.Items.Strings[los]);
+  ListBox1.Items.Delete(los);
+  tablica[liczba]:=i;
+end;
+randomize;
+los:=random(99+1);
+tablica[100]:=tablica[los];
+tablica[los]:=50;
+for i:=1 to 100 do begin
+TImage(FindComponent('Image'+inttostr(i))).Picture:=nil;
+end;
+end;
+
+procedure TForm1.Klikniecie(Sender: TObject);
+var ktory,view,z,i,j:integer;
+begin
+licz:=0;
+if widoczne=2 then begin
+for view:=1 to 100 do begin
+TImage(FindComponent('Image'+inttostr(view))).Picture:=nil;
+TImage(FindComponent('Image'+inttostr(view))).Enabled:=True;
+widoczne:=0;
+end;
+punkty:=punkty+1;
+label1.caption:=inttostr(punkty);
+end;
+if widoczne<2 then begin
+if sound=1 then begin
+PlaySound(PChar(ExtractFilePath(Paramstr(0))+'klik'),0,snd_Async);end;
+ktory:=TComponent(Sender).Tag;
+TImage(FindComponent('Image'+inttostr(ktory))).Picture.Bitmap.LoadFromFile(ExtractFilePath(Paramstr(0))+'grafika\'+inttostr(tablica[ktory])+'.bmp');
+TImage(FindComponent('Image'+inttostr(ktory))).Enabled:=False;
+widoczne:=widoczne+1;
+end;
+if listbox2.items.count<2 then begin
+Listbox2.items.add(inttostr(TComponent(Sender).Tag));end;
+if Listbox2.items.count=2 then
+if tablica[strtoint(listbox2.items.Strings[0])]=tablica[strtoint(listbox2.items.Strings[1])] then begin
+TPanel(FindComponent('Panel'+listbox2.items.Strings[0])).Visible:=False;
+TPanel(FindComponent('Panel'+listbox2.items.Strings[1])).Visible:=False;
+punkty:=punkty-1;
+label1.caption:=inttostr(punkty);
+if sound=1 then begin
+PlaySound(PChar(ExtractFilePath(Paramstr(0))+'trafiony'),0,snd_Async);end;
+end;
+if Listbox2.items.count=2 then begin
+listbox2.clear;end;
+
+for z:=1 to 100 do begin
+if TPanel(FindComponent('Panel'+inttostr(z))).Visible=False then
+licz:=licz+1;end;
+
+if licz=100 then begin
+Timer1.Enabled:=False;
+if sound=1 then begin
+PlaySound(PChar(ExtractFilePath(Paramstr(0))+'brawa'),0,snd_Async);end;
+ for I:=1 to 10 do
+  for J:=1 to 10 do
+   if Wynik2[I]<Wynik2[J] then
+      begin
+      Wynik1[0]:=Wynik1[i];
+      Wynik1[i]:=Wynik1[j];
+      Wynik1[j]:=Wynik1[0];
+      Wynik3[0]:=Wynik3[i];
+      Wynik3[i]:=Wynik3[j];
+      Wynik3[j]:=Wynik3[0];
+      Wynik2[0]:=Wynik2[i];
+      Wynik2[i]:=Wynik2[j];
+      Wynik2[j]:=Wynik2[0];
+      end;
+ if Punkty<Wynik2[10] then
+    begin
+    Form2.ShowModal;
+    Form3.ShowModal;
+    end;
+ end;
+end;
+
+procedure TForm1.Wyjcie1Click(Sender: TObject);
+begin
+Form1.Close;
+end;
+
+procedure TForm1.Timer1Timer(Sender: TObject);
+var s,m,g:string;
+begin
+sek:=sek+1;
+if sek=60 then begin
+sek:=0;
+min:=min+1; end;
+if min=60 then begin
+min:=0;
+godz:=godz+1;
+end;
+if sek<10 then
+s:='0'+inttostr(sek) else
+s:=inttostr(sek);
+if min<10 then
+m:='0'+inttostr(min) else
+m:=inttostr(min);
+if godz<10 then
+g:='0'+inttostr(godz) else
+g:=inttostr(godz);
+Label2.Caption:=g+':'+m+':'+s;
+end;
+
+procedure TForm1.Pauza1Click(Sender: TObject);
+var z:integer;
+begin
+if pauza=false then begin
+pauza:=true;
+form1.caption:=nazwa+' Pauza';
+Timer1.Enabled:=False;
+for z:=1 to 100 do begin
+TImage(FindComponent('Image'+inttostr(z))).Enabled:=False;end;
+end else begin
+pauza:=false;
+form1.caption:=nazwa;
+Timer1.Enabled:=True;
+for z:=1 to 100 do begin
+TImage(FindComponent('Image'+inttostr(z))).Enabled:=True;end;
+end;
+end;
+
+procedure TForm1.NajlepszeWyniki1Click(Sender: TObject);
+begin
+ if Timer1.Enabled=True then
+    begin
+    Pauza1Click(Sender);
+    end;
+Form3.ShowModal;   
+end;
+
+procedure TForm1.FormClose(Sender: TObject; var Action: TCloseAction);
+var Plik:TINIFile;
+begin
+Plik:=TINIFile.Create(ExtractFilePath(ParamStr(0))+'ustawienia');
+Plik.WriteInteger('SOUND','s',Sound);
+Plik.Free;
+end;
+
+procedure TForm1.FormCreate(Sender: TObject);
+var Plik: TINIFile;
+    I: Byte;
+begin
+ try
+ Screen.Cursors[crTr1]:=LoadCursorFromFile(PChar(ExtractFilePath(ParamStr(0))+'grafika\kursor.cur'));
+ for i:=1 to 100 do begin
+ TImage(FindComponent('Image'+inttostr(i))).Cursor:=crTr1;
+ TPanel(FindComponent('Panel'+inttostr(i))).Cursor:=crTr1;end;
+ Plik:=TINIFile.Create(ExtractFilePath(ParamStr(0))+'ustawienia');
+  for I:=1 to 10 do
+     begin
+     Wynik1[I]:=Plik.ReadString('WYNIKI',IntToStr(I),'Piniol');
+     Wynik2[I]:=Plik.ReadInteger('WYNIKI',IntToStr(I)+'a',300);
+     Wynik3[I]:=Plik.ReadString('WYNIKI',IntToStr(I)+'b','06:00:00');
+     end;
+  case Plik.ReadInteger('SOUND','s',1) of
+   0: begin OdtwarzajDwiki1.Checked:=False; Sound:=0; end;
+   1: begin OdtwarzajDwiki1.Checked:=True; Sound:=1; end;
+  end;
+ finally
+ Plik.Free;
+ end;
+end;
+
+procedure TForm1.OdtwarzajDwiki1Click(Sender: TObject);
+begin
+ If OdtwarzajDwiki1.Checked=True then
+    begin
+    OdtwarzajDwiki1.Checked:=False;
+    Sound:=0;
+    end else
+       begin
+       OdtwarzajDwiki1.Checked:=True;
+       Sound:=1;
+       end;
+end;
+
+procedure TForm1.Informacje1Click(Sender: TObject);
+begin
+if Timer1.Enabled=True then
+    begin
+    Pauza1Click(Sender);
+    end;
+Form4.ShowModal;
+end;
+
+procedure TForm1.OProgramie1Click(Sender: TObject);
+begin
+if Timer1.Enabled=True then
+    begin
+    Pauza1Click(Sender);
+    end;
+Form5.ShowModal;
+end;
+
+procedure TForm1.Pozdrowienia1Click(Sender: TObject);
+var P: PChar;
+begin
+ if Timer1.Enabled=True then
+    begin
+    Pauza1Click(Sender);
+    end;
+P:=PChar('Pozdrowienia:'+#13+'Tasak'+#13+'Piêkny'+#13+'Piela'+#13+'Harry'+#13#13+
+'TDFWLightEdites'+#13+'(c) Erol S. Uzuner'+#13+'Version: 1.0, 26.03.99'+#13+
+'sarcon@tzi.de'+#13+#13+'TStringAlignGrid'+#13+'(c) Andreas Hörstemeier'+#13+
+'Version 2.0 2000-02-12');
+Application.MessageBox(P,'Podziêkowania...',MB_OK);
+end;
+
+end.
